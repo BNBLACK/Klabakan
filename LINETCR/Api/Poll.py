@@ -15,16 +15,16 @@ class Poll:
   auth_query_path = "/api/v4/TalkService.do";
   http_query_path = "/S4";
   polling_path = "/P4";
-  host = "gw.line.naver.jp";
+  host = "gd2.line.naver.jp";
   port = 443;
 
-  UA = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
-  LA = "DESKTOPMAC 10.10.2-YOSEMITE-x64   MAC 4.5.0"
+  UA = "Line/7.14.0"
+  LA = "IOSIPAD\t7.14.0\tiPhone OS\t10.12.0"
 
   rev = 0
 
   def __init__(self, authToken):
-    self.transport = THttpClient.THttpClient('https://gw.line.naver.jp:443'+ self.http_query_path)
+    self.transport = THttpClient.THttpClient('https://gd2.line.naver.jp:443'+ self.http_query_path)
     self.transport.setCustomHeaders({
       "User-Agent" : self.UA,
       "X-Line-Application" : self.LA,
