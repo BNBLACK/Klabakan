@@ -6,23 +6,23 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE() #Luffy
-cl.login(token="EpbqrIEvAtSb5keqK693./S9MfaCyVt2UWQrCnR0YaW.gJHbcdSk3ggsttrhi0UhzeS2soY5TcNhskzRzaoXzrg=")
+cl.login(token="EsOUaxklrLQtCcY5LF0d.+YJQegCzmlp/DpdIuBUA7q.bUAeHXQVh2zm1ucty+LzD26sKYq6z0VHTAOSGKfizQI=")
 cl.loginResult()
 
 ki = LINETCR.LINE() #Zorro
-ki.login(token="EpSU6ptQyvEWElQbXyL5.aiFMrsl4B2IZoV+17ozzPq.5jcpw9CtYhuNEKWDIXP94sAk+rYEkC21/O1yo9DKjXQ=")
+ki.login(token="EsdvGPzFjmkkt2yznD7e.BCvAaI8QeUkvdwYj/dr3hG.N98m2pGhQTm5H8J+skLipHvy7QM9+kyUtoxtB2+H1IM=")
 ki.loginResult()
 
 kk = LINETCR.LINE() #Sanji
-kk.login(token="EpmI9SRse4pYmrWvtFLd.3Ei8JbZS2wh19ftK7vKHFq.bA+AueKWqR7NKTomUB8QaFgvr5KlGY1fSsURQeVJPM0=")
+kk.login(token="EscKfOGG5CcuLbV679Z2.YYeoM22Vhks1am4XV4nUSG.BWniNBOf68IKiKUIzecSSorlWybZXl2H47d1WOhXAR4=")
 kk.loginResult()
 
 kc = LINETCR.LINE() #Ussop
-kc.login(token="Ep5ycEUOHanVSilFXbq7.iORYVx8ZLyNk4aU21XqrvW.xeWpeKBzcvFRn42snEL06OGImuuAo6duNT68VLT4Gm4=")
+kc.login(token="EsMGbOiGfPO4S9M0NAN0.wGr95zTk0yWlu34UQ3qICa.fHQOqSm99g48kuMW48t6dkVLEvvG2TaTJnOegDeVaTo=")
 kc.loginResult()
 
 ks = LINETCR.LINE() #Chooper
-ks.login(token="Ephpxtd73EyxYMfFyxK5.VcZ40xNjXUeNZGukR70Zzq./THMLdh6BfYunZl9NwLqSynLFkT7enBYSt6x5gLTGwo=")
+ks.login(token="EsF4xIPjRQ1BYRPTi3V7.c3AuannFO2GnZDL3vUfOnW.MOq2ntGlM0NNrWVDW/9ylJ2sUh0ON7FG5GXTStVBqqU=")
 ks.loginResult()
 
 print "login success plak"
@@ -76,8 +76,8 @@ Cmid = kc.getProfile().mid #Ussop
 Dmid = ks.getProfile().mid #Chooper
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid,'ufacf66140718bd3daec2a45c36bd3203']
-admin=["u25418630a2952d6e99b2ec6df86ae9d3","uaa4a118d8bfa5051da06015d013e5994","u862ab2324f63bd912b547c79505cca72","ub51be10c4c3b9cb94d61d109db84b504","ud43181d7e12eb605728a06b6ff99bd66","u3c7f7a67189c21fdbe262d98d41b0b8c"]
-owner=["u25418630a2952d6e99b2ec6df86ae9d3"]
+admin=["u25418630a2952d6e99b2ec6df86ae9d3","uaa4a118d8bfa5051da06015d013e5994","u862ab2324f63bd912b547c79505cca72","ub51be10c4c3b9cb94d61d109db84b504","ud43181d7e12eb605728a06b6ff99bd66","uf33a411f97b34a0bd3a80bef9b3b4432"]
+owner=["uf33a411f97b34a0bd3a80bef9b3b4432"]
 whitelist=["u25418630a2952d6e99b2ec6df86ae9d3"]
 wait = {
     'contact':False,
