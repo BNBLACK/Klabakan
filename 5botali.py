@@ -6,26 +6,26 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE() #Luffy
-cl.login(token="EsOUaxklrLQtCcY5LF0d.+YJQegCzmlp/DpdIuBUA7q.bUAeHXQVh2zm1ucty+LzD26sKYq6z0VHTAOSGKfizQI=")
+cl.login(token="EsrAUijjBW39OeE3Bfw7.c3AuannFO2GnZDL3vUfOnW.B3cfIVw/wmmtCjtR3Vd2ygOAnoHOcAyHY39rdpRYZdQ=")
 cl.loginResult()
 
 ki = LINETCR.LINE() #Zorro
-ki.login(token="EsdvGPzFjmkkt2yznD7e.BCvAaI8QeUkvdwYj/dr3hG.N98m2pGhQTm5H8J+skLipHvy7QM9+kyUtoxtB2+H1IM=")
+ki.login(token="Es8erFshiQdAi4vQcj67.O0FGNtYKmYt9Qd28sB065W.LITU+/Q97sswaJxXlNaKoq6C+jxwOBTLIlS4FEOlN2E=")
 ki.loginResult()
 
 kk = LINETCR.LINE() #Sanji
-kk.login(token="EscKfOGG5CcuLbV679Z2.YYeoM22Vhks1am4XV4nUSG.BWniNBOf68IKiKUIzecSSorlWybZXl2H47d1WOhXAR4=")
+kk.login(token="EsyIzDzPh3igo9cl3dX0.wGr95zTk0yWlu34UQ3qICa.29AElFCaYwa/FnE0DF8gfxambySmj2+Cem3wfZD6d/w=")
 kk.loginResult()
 
 kc = LINETCR.LINE() #Ussop
-kc.login(token="EsMGbOiGfPO4S9M0NAN0.wGr95zTk0yWlu34UQ3qICa.fHQOqSm99g48kuMW48t6dkVLEvvG2TaTJnOegDeVaTo=")
+kc.login(token="EsWV15Z9eXEfqysf4HC2.YYeoM22Vhks1am4XV4nUSG.X/KPXIeBiyOnoFvOHCXP3bnoy34sjF7RtJePhA8dT7k=")
 kc.loginResult()
 
 ks = LINETCR.LINE() #Chooper
-ks.login(token="EsF4xIPjRQ1BYRPTi3V7.c3AuannFO2GnZDL3vUfOnW.MOq2ntGlM0NNrWVDW/9ylJ2sUh0ON7FG5GXTStVBqqU=")
+ks.login(token="Essr5mkgTrngJfBUSQge.BCvAaI8QeUkvdwYj/dr3hG.5Dmal8lEBf9LiqcGLgLMv8H8pNPDfJsPS2iFfZDuMk0=")
 ks.loginResult()
 
-print "login success plak"
+print "login success "
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -75,10 +75,10 @@ Bmid = kk.getProfile().mid #Sanji
 Cmid = kc.getProfile().mid #Ussop
 Dmid = ks.getProfile().mid #Chooper
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,'ufacf66140718bd3daec2a45c36bd3203']
-admin=["u25418630a2952d6e99b2ec6df86ae9d3","uaa4a118d8bfa5051da06015d013e5994","u862ab2324f63bd912b547c79505cca72","ub51be10c4c3b9cb94d61d109db84b504","ud43181d7e12eb605728a06b6ff99bd66","uf33a411f97b34a0bd3a80bef9b3b4432"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,"uf33a411f97b34a0bd3a80bef9b3b4432","u0b769400d35fa3680dcdd97756e16837","ua347e09d3ca43324fda83dbc49bd3ae7","u5a047de59b4ad18c0b537e2eab742270","ucb210e9b6daf1ca4b500ce31bf836eb2","u6dc55a022f2a12e2950d6c89f834771e"]
+admin=["uf33a411f97b34a0bd3a80bef9b3b4432","u25418630a2952d6e99b2ec6df86ae9d3"]
 owner=["uf33a411f97b34a0bd3a80bef9b3b4432"]
-whitelist=["u25418630a2952d6e99b2ec6df86ae9d3"]
+whitelist=["uf33a411f97b34a0bd3a80bef9b3b4432"]
 wait = {
     'contact':False,
     'autoJoin':True,
