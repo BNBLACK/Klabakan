@@ -6,23 +6,23 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE() #Luffy
-cl.login(token="Et6zWIievi85jfQU4K24.TkvigidwktxwcWhKhmIoza.iCPsDFBq4Zjs4FRAksoOxwwIjR4AiYTdLMQ8l6BOVyo=")
+cl.login(token="Et4KKPUl49bRygrW5By4.TkvigidwktxwcWhKhmIoza.IfDar9GAPhqAHtSjIJHjaIdoEk//ti2MflVJ1yDzxAc=")
 cl.loginResult()
 
 ki = LINETCR.LINE() #Zorro
-ki.login(token="Es8erFshiQdAi4vQcj67.O0FGNtYKmYt9Qd28sB065W.LITU+/Q97sswaJxXlNaKoq6C+jxwOBTLIlS4FEOlN2E=")
+ki.login(token="EtF1mbbJRnclNUlfYmp8.cUJFoJGr3UYty6YBg8bcka.BTzlu0lMpr4KV/goRGaMUgWEfbcNe+cqAyS9vG7VWOI=")
 ki.loginResult()
 
 kk = LINETCR.LINE() #Sanji
-kk.login(token="EtL2gcjVyNVDKHufS5L0./liouaQP+sXQKxkgUUtUya.Di7ONOvzTxuhGQqjR4OZQJjuMEhaUVNe5WL/4t49ieE=")
+kk.login(token="EtoBPhxw70WgHcBZY210./liouaQP+sXQKxkgUUtUya.BnjfVErqHuM4ySLYyP5hAfV5mflu0K+6FY9SIbhs4og=")
 kk.loginResult()
 
 kc = LINETCR.LINE() #Ussop
-kc.login(token="Et3EpI2hs1mrjNRMKBW8.cUJFoJGr3UYty6YBg8bcka.dxbN0qPFWc7zYtl9Nf8klD3H6JwyW0cUiS9cDitzFBk=")
+kc.login(token="EtOSaSP8oTBvBp08lNX6.Tu7EmT8TZNPaEkEQTnL0PG.kOJ/EAYg0stSxWK1SUwDClf+maZ9M1B4KZzHGfKStDM=")
 kc.loginResult()
 
 ks = LINETCR.LINE() #Chooper
-ks.login(token="Essr5mkgTrngJfBUSQge.BCvAaI8QeUkvdwYj/dr3hG.5Dmal8lEBf9LiqcGLgLMv8H8pNPDfJsPS2iFfZDuMk0=")
+ks.login(token="EtgwEEtYFebQ0TYagNS8.ZsO9J5JHYlZUnoIxBPBnQa.aJ5ozBckfMGlDRsMwzYvQoyTfgio6V5K4NlcSLmYB20=")
 ks.loginResult()
 
 print "login success "
@@ -75,9 +75,9 @@ Bmid = kk.getProfile().mid #Sanji
 Cmid = kc.getProfile().mid #Ussop
 Dmid = ks.getProfile().mid #Chooper
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,"uf33a411f97b34a0bd3a80bef9b3b4432","u0b769400d35fa3680dcdd97756e16837","ua347e09d3ca43324fda83dbc49bd3ae7","u5a047de59b4ad18c0b537e2eab742270","ucb210e9b6daf1ca4b500ce31bf836eb2","u6dc55a022f2a12e2950d6c89f834771e"]
-admin=["uf33a411f97b34a0bd3a80bef9b3b4432","u25418630a2952d6e99b2ec6df86ae9d3","ub4a5481880d62935d60b01e41cc88e64","u0ae8df3a3811deec9363ac9b1bc04228","uff28ea10671930b3fe74f0e251bb9aed"]
-owner=["uf33a411f97b34a0bd3a80bef9b3b4432"]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,"uff28ea10671930b3fe74f0e251bb9aed","u8292f73b77c82e709cd175ede9834b33","u5a814038bb9430f92516a16e03cee1bb","ub4a5481880d62935d60b01e41cc88e64","u0ae8df3a3811deec9363ac9b1bc04228","uf8b20e500aa9fd2c6a917286bae4ee60","ub54ede32df2dce7a4078a7aab4d974a6","ucd2a3d8f98e1c8bcee34e8976e96cda8"]
+admin=["uff28ea10671930b3fe74f0e251bb9aed","u8292f73b77c82e709cd175ede9834b33","u322fd3d219a3a71362e6f3e0c55a6c30","ueb192e2133e812ddbf9a88b88d8b45b8","u5a814038bb9430f92516a16e03cee1bb"]
+owner=["uf33a411f97b34a0bd3a80bef9b3b4432","uff28ea10671930b3fe74f0e251bb9aed"]
 whitelist=["uf33a411f97b34a0bd3a80bef9b3b4432"]
 wait = {
     'contact':False,
@@ -242,10 +242,10 @@ def bot(op):
                 print "autoJoin is Off"
                     
         #------Joined User Kick start------#
-        #if op.type == 17: #awal 17 ubah 13
-           #if wait["Protectjoin"] == True:
-               #if op.param2 not in admin and Bots : # Awalnya admin doang
-                   #random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+        if op.type == 13: #awal 17 ubah 13
+           if wait["Protectjoin"] == True:
+               if op.param2 not in admin and Bots : # Awalnya admin doang
+                   random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
         #------Joined User Kick start------#
         if op.type == 19: #Member Ke Kick
           if op.param2 in Bots:
@@ -258,13 +258,13 @@ def bot(op):
             try:
               cl.kickoutFromGroup(op.param1,[op.param2])
               wait["blacklist"][op.param2] = True
-              #f=codecs.open('st2__b.json','w','utf-8')
-              #json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
+              f=codecs.open('st2__b.json','w','utf-8') #tanda
+              json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False) # tanda
             except:
               random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
               wait["blacklist"][op.param2] = True
-              #f=codecs.open('st2__b.json','w','utf-8')
-              #json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
+              f=codecs.open('st2__b.json','w','utf-8') #tanda
+              json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False) # tanda
               
         if op.type == 19: #bot Ke Kick
           if op.param2 in Bots:
